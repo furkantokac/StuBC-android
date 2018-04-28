@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_user_default_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_user_name" />
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_department_list_titles"
+        android:entryValues="@array/pref_department_list_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_departments" />
+
+</PreferenceScreen>
+
+<!--
+// StuBC V0.2
+{
+  "StuBC": {
+    "User": {
+      "_id": "user_id",
+      "username": "usernametest",
+      "password": "passwordtest",
+      "email": "emailtest@metu.edu.tr",
+      "first_name": "firstnametest",
+      "last_name": "lastnametest",
+      "department": "departmenttest",
+      "rank": 10,
+      "interest": "interesttest",
+      "register_date": "",
+      "social": [
+        "githubtest",
+        "facebooktest"
+      ],
+      "permission": [
+        "admin",
+        "open_room"
+      ]
+    },
+    "EmailDomains": {
+      "_id": "emaildomainid",
+      "domain": "test.com"
+    },
+    "Project": {
+      "_id": "project_id",
+      "name": "nametest",
+      "decription": "descriptiontest",
+      "start_date": "datetest",
+      "manager": "user_id",
+      "participants": [
+        "useridtest1",
+        "useridtest2"
+      ]
+    },
+    "Meeting": {
+      "_id": "meeting_id",
+      "date_time": "date_timetest",
+      "decription": "descriptiontest",
+      "place": "placetest",
+      "topic": "topictest",
+      "participants": [
+        "useridtest1",
+        "useridtest2"
+      ]
+    },
+    "WeeklyNews": {
+      "_id": "news_id",
+      "monday_date": "monday_datetest",
+      "done": "donetest",
+      "plan": "plantest"
+    },
+    "Component": {
+      "_id": "component_id",
+      "name": "nametest",
+      "decription": "descriptiontest",
+      "amount": 12
+    },
+    "ComponentBarrow": {
+      "_id": "barrowing_id",
+      "barrower_id": "useridtest",
+      "component_id": "componentidtest",
+      "amount": 3,
+      "reason": "",
+      "date": "datetest"
+    },
+    "Room": {
+      "_id": "room_id",
+      "name": "nametest",
+      "location": "locationtest"
+    },
+    "RoomSchedule": {
+      "_id": "roomschedule_id",
+      "room_id": "roomidtest",
+      "keeper_id": "keeperidtest",
+      "date_time": "datetimetest"
+    }
+  }
+}
+-->
